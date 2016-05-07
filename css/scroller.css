@@ -1,0 +1,25 @@
+.scrollerMask {
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.scrollerMask > .scrollerOverflowArrow {
+	font-size: larger;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.scrollerMask > .scrollerOverflowArrow[data-dir="left"]{ left: 5px; }
+.scrollerMask > .scrollerOverflowArrow[data-dir="right"]{ right: 5px; }
+
+.scrollerMask > .scrollerOverflow {
+	width: 100%;
+	padding: 0 25px;
+	box-sizing: border-box;
+	overflow-x: scroll;
+}
